@@ -2,12 +2,17 @@
 # Basic Configuration
 ########################################
 
-# main menu navigation
+# 主菜单导航
 # for more icon information, please visit https://github.com/D-Sketon/hexo-theme-reimu/issues/30
+
+# name：菜单显示名称（支持中文）。
+# url：链接地址（空字符串表示首页）。
+# icon：图标代码（可参考 Font Awesome 图标库，或留空使用默认图标）。
+
 menu:
   - name: home
-    url: ""
-    icon: # default use taichi icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
+    url: 
+    icon:  # default use taichi icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
   - name: archives
     url: "archives"
     icon:
@@ -26,18 +31,19 @@ monthFormat: "2006-01"
 dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
-author: D-Sketon
-email: xxx@example.com
-description: "少女祈祷中..."
-subtitle: "少女祈祷中..."
+author: xiaoming
+email: 19513317149@163.com
+description: "记录生活与技术"
+subtitle: "小明祈祷中..."
 
+#更改背景图
 banner: "images/banner.webp"
 # You can also write it in the form of the following url
 # banner: "https://example.com"
 
 # If you want to use the srcset attribute, please enable it
 banner_srcset:
-  enable: false
+  enable: enable
   srcset:
     - src: "images/banner-600w.webp"
       media: "(max-width: 479px)"
@@ -104,7 +110,8 @@ footer:
     mask: true # whether to use the images as a mask
 
 # Sidebar
-sidebar: right
+# 侧边栏位置（right/left/bottom）。
+sidebar: left
 
 social:
   # email: mailto:xxx@gmail.com
@@ -148,7 +155,7 @@ tagcloud_limits: 20
 # Archive behavior
 only_show_capsule_in_index: false # If you have hugo amounts of tags and categories, you can set this to true to only show the capsule in the index page for better performance
 
-show_update_time: false # If you want to show the update time, please set this to true
+show_update_time: true # 如果您想显示更新时间，请将此设置为true
 
 # Summary content
 summary:
@@ -236,9 +243,9 @@ dark_mode:
 # Analytics
 ########################################
 
-baidu_analytics: false
-google_analytics: false
-clarity: false
+baidu_analytics: ture
+google_analytics: ture
+clarity: ture
 
 ########################################
 # Markdown Display
@@ -319,7 +326,7 @@ valine:
 
 # https://waline.js.org/
 waline:
-  enable: false
+  enable: 
   serverURL:
   # lang: zh-CN # deprecated, use html.lang instead
   locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
@@ -407,9 +414,9 @@ animation:
       title: slide-up
       subTitle: slide-down
     home:
-      post: fade-up
-      widget: fade-up
-      sidebar: fade-up
+      post: fade-in
+      widget: fade-in
+      sidebar: fade-in
     article:
       whole: fade-up
       date: zoom-in
@@ -426,6 +433,7 @@ animation:
       nav: fade-up
 
 # see https://github.com/D-Sketon/mouse-firework
+# 鼠标烟火开关
 firework:
   enable: true
   options:
