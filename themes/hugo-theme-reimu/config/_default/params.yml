@@ -243,9 +243,9 @@ dark_mode:
 # Analytics
 ########################################
 
-baidu_analytics: ture
-google_analytics: ture
-clarity: ture
+baidu_analytics: false
+google_analytics: false
+clarity: false
 
 ########################################
 # Markdown Display
@@ -326,7 +326,7 @@ valine:
 
 # https://waline.js.org/
 waline:
-  enable: 
+  enable: false
   serverURL:
   # lang: zh-CN # deprecated, use html.lang instead
   locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
@@ -414,9 +414,9 @@ animation:
       title: slide-up
       subTitle: slide-down
     home:
-      post: fade-in
-      widget: fade-in
-      sidebar: fade-in
+      post: fade-up
+      widget: fade-up
+      sidebar: fade-up
     article:
       whole: fade-up
       date: zoom-in
