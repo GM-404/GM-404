@@ -1,12 +1,25 @@
-baseURL = "https://GM-404/"  # 后续部署的域名
-languageCode = "zh-CN"         # 语言（中文）
-title = "我的博客"             # 博客标题
+# 后续部署的域名
+baseURL = "https://GM-404/"  
+
+# 语言配置
+languageCode = 'zh-CN'
+defaultContentLanguage = 'zh-CN'
+[languages]
+[languages.zh-CN]
+languageName = '简体中文'
+weight = 1
+hasCJKLanguage = true
+
+# 博客标题
+title = "Welcome" 
+
+# 主题配置
 theme = "hugo-theme-reimu"
 
 # 可选：启用评论、社交链接等
 [params]
   author = "GM-404"
-  description = "这是我的个人博客"
+  description = "分享生活与技术"
   [params.social]
     github = "GM-404"
     twitter = "你的 Twitter 用户名"
